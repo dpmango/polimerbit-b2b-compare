@@ -122,28 +122,48 @@
                     <div class="contacts__radio">
                       <div class="ui-checkbox">
                         <label>Федеральная сеть
-                          <input type="radio" name="group1"><span></span>
+                          <input type="radio" name="group1" value="select-1"><span></span>
                         </label>
                       </div>
                       <div class="ui-checkbox">
                         <label>Локальная сеть
-                          <input type="radio" name="group1"><span></span>
+                          <input type="radio" name="group1" value="select-2"><span></span>
                         </label>
                       </div>
                       <div class="ui-checkbox">
                         <label>Дистрибьютора
-                          <input type="radio" name="group1"><span></span>
+                          <input type="radio" name="group1" value="select-3"><span></span>
                         </label>
                       </div>
                     </div>
-                    <div class="contacts__select">
+                    <div class="contacts__select" data-select="select-1">
                       <select js-select>
-                        <option value="val0">Ваш регион</option>
-                        <option value="val1">СНГ</option>
-                        <option value="val2">ЦФО</option>
-                        <option value="val3">СЗФО</option>
-                        <option value="val4">УРФО</option>
-                        <option value="val5">СФО</option>
+                        <option value="val0">Ваш регион (Фед.)</option>
+                        <option value="val1-1">СНГ (Фед.)</option>
+                        <option value="val1-2">ЦФО (Фед.)</option>
+                        <option value="val1-3">СЗФО (Фед.)</option>
+                        <option value="val1-4">УРФО (Фед.)</option>
+                        <option value="val1-5">СФО (Фед.)</option>
+                      </select>
+                    </div>
+                    <div class="contacts__select" data-select="select-2">
+                      <select js-select>
+                        <option value="val0">Ваш регион (Лок.)</option>
+                        <option value="val2-1">СНГ (Лок.)</option>
+                        <option value="val2-2">ЦФО (Лок.)</option>
+                        <option value="val2-3">СЗФО (Лок.)</option>
+                        <option value="val2-4">УРФО (Лок.)</option>
+                        <option value="val2-5">СФО (Лок.)</option>
+                      </select>
+                    </div>
+                    <div class="contacts__select" data-select="select-3">
+                      <select js-select>
+                        <option value="val0">Ваш регион (Дист.)</option>
+                        <option value="val3-1">СНГ (Дист.)</option>
+                        <option value="val3-2">ЦФО (Дист.)</option>
+                        <option value="val3-3">СЗФО (Дист.)</option>
+                        <option value="val3-4">УРФО (Дист.)</option>
+                        <option value="val3-5">СФО (Дист.)</option>
                       </select>
                     </div>
                     <div class="contacts__separator"></div>
@@ -157,10 +177,178 @@
                         <p>Для отображения контакта<br>выберите сеть</p>
                       </div>
                     </div>
-                    <div class="contacts__person">
+                    <div class="contacts__person" data-person="val1-1">
                       <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
                       <div class="contacts__person-info">
-                        <p>Макаренко Ирина</p><a href="tel:+74991710605">
+                        <p>Макаренко Ирина СНГ (Фед.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val1-2">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина ЦФО (Фед.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val1-3">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина СЗФО (Фед.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val1-4">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина УРФО (Фед.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val1-5">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина СФО (Фед.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val2-1">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина СНГ (Лок.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val2-2">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина ЦФО (Лок.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val2-3">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина СЗФО (Лок.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val2-4">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина УРФО (Лок.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val2-5">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина СФО (Лок.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val3-1">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина СНГ (Дист.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val3-2">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина ЦФО (Дист.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val3-3">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина СЗФО (Дист.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val3-4">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина УРФО (Дист.)</p><a href="tel:+74991710605">
+                          <svg class="ico ico-color-icon-phone-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
+                          </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
+                          <svg class="ico ico-color-icon-mail-c">
+                            <use xlink:href="img/sprite-color.svg#ico-color-icon-mail-c"></use>
+                          </svg>info@polimerbit.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__person" data-person="val3-5">
+                      <div class="contacts__person-image"><img src="img/person3.jpg" srcset="img/person3@2x.jpg 2x"></div>
+                      <div class="contacts__person-info">
+                        <p>Макаренко Ирина СФО (Дист.)</p><a href="tel:+74991710605">
                           <svg class="ico ico-color-icon-phone-c">
                             <use xlink:href="img/sprite-color.svg#ico-color-icon-phone-c"></use>
                           </svg>+7 (499) 171-06-05</a><a href="mailto:info@polimerbit.ru">
@@ -187,8 +375,7 @@
                   </svg>
                 </div>
                 <div class="footer__address">
-                  <div class="footer__address-title">МЫ НАХОДИМСЯ ТУТ</div>
-                  <div class="footer__address-content">109202, г. Москва, 2-я Карачаровская ул., д. 3</div>
+                  <div class="footer__address-title">МЫ НАХОДИМСЯ ТУТ</div><a class="footer__address-content" href="/contacts.html">109202, г. Москва, 2-я Карачаровская ул., д. 3</a>
                 </div>
                 <div class="footer__developer"><a href="#" target="_blank">Создание сайта – Студия NetLab</a></div>
               </div>

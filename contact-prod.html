@@ -80,12 +80,103 @@
           <!-- header modifier class-->
           <div js-header-class data-class="is-white"></div>
           <!-- HERO-->
-          <div class="hero">
-            <div class="hero__background" data-aos="blur"><img src="img/heroBackground_1.jpg" srcset="img/heroBackground_1@2x.jpg 2x"></div>
+          <div class="hero hero--with-overlay">
+            <div class="hero__background" data-aos="blur">
+              <video muted loop autoplay poster="img/heroBackground_1.jpg">
+                <source src="video/cooperation1.mp4" type="video/mp4">
+                <source src="video/cooperation1.webm" type="video/webm">
+              </video>
+            </div>
             <div class="hero__content" data-aos="fade-up">
-              <div class="container">
+              <div class="container container--team">
                 <div class="hero__subtitle">Контактное производство</div>
                 <div class="hero__title">Создавая продукт, Мы создаем ценность для наших Партнеров!</div>
+              </div>
+            </div>
+          </div>
+          <!-- CONTACT PRODUCTION INFO-->
+          <div class="contact">
+            <div class="container container--team">
+              <p class="today__section" data-aos="fade-up">Контрактное производство на ТПА оборудовании</p>
+              <div class="contact__grid">
+                <div class="contact__item" data-aos="fade-up">
+                  <div class="contact__icon">
+                    <svg class="ico ico-color-contact-1">
+                      <use xlink:href="img/sprite-color.svg#ico-color-contact-1"></use>
+                    </svg>
+                  </div>
+                  <p>Входящая заявка/составление технического задания</p>
+                </div>
+                <div class="contact__item" data-aos="fade-up">
+                  <div class="contact__icon">
+                    <svg class="ico ico-color-contact-2">
+                      <use xlink:href="img/sprite-color.svg#ico-color-contact-2"></use>
+                    </svg>
+                  </div>
+                  <p>3D Моделирование/ Прототипирование/ Предварительный расчёт</p>
+                </div>
+                <div class="contact__item" data-aos="fade-up">
+                  <div class="contact__icon">
+                    <svg class="ico ico-color-contact-3">
+                      <use xlink:href="img/sprite-color.svg#ico-color-contact-3"></use>
+                    </svg>
+                  </div>
+                  <p>Проектирование и изготовление пресс</p>
+                </div>
+                <div class="contact__item" data-aos="fade-up">
+                  <div class="contact__icon">
+                    <svg class="ico ico-color-contact-4">
+                      <use xlink:href="img/sprite-color.svg#ico-color-contact-4"></use>
+                    </svg>
+                  </div>
+                  <p>Запуск изделия в серию</p>
+                </div>
+              </div>
+              <div class="contact__content">
+                <form action="#" js-validate-form>
+                  <div class="contact__form" data-aos="fade-up">
+                    <p class="contact__form-title">Оставить заявку</p>
+                    <div class="contact__row">
+                      <div class="contact__input">
+                        <p>Представьтесь пожалуйста</p>
+                        <div class="input-container">
+                          <input type="text" name="name" placeholder="Иванов Иван">
+                        </div>
+                      </div>
+                      <div class="contact__input">
+                        <p>Введите ваш e-mail</p>
+                        <div class="input-container">
+                          <input type="text" name="email" placeholder="info@polimerbit.ru">
+                        </div>
+                      </div>
+                      <div class="contact__input">
+                        <p>Введите ваш телефон</p>
+                        <div class="input-container">
+                          <input type="text" name="phone" placeholder="+X (XXX) XXX-XXXX">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact__input">
+                      <p>Комментарий к заявке</p>
+                      <div class="input-container">
+                        <textarea placeholder="Опишите ваши эмоции при использовании нашей продукцией."></textarea>
+                      </div>
+                    </div>
+                    <div class="contact__input">
+                      <input class="btn" type="submit" value="Отправить">
+                    </div>
+                    <p class="contact__form-polit">Нажимая кнопку "Отправить" Вы соглашаетесь с<a href="#">политикой конфиденциальности</a>.</p>
+                  </div>
+                </form>
+                <div class="contact__link" data-aos="fade-up"><a class="nav-link" href="#">
+                    <div class="nav-link__content">
+                      <div class="nav-link__name">Статья о нашем оборудовании</div>
+                    </div>
+                    <div class="nav-link__icon">
+                      <svg class="ico ico-mono-arrow-right">
+                        <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-right"></use>
+                      </svg>
+                    </div></a></div>
               </div>
             </div>
           </div>
@@ -102,8 +193,7 @@
                   </svg>
                 </div>
                 <div class="footer__address">
-                  <div class="footer__address-title">МЫ НАХОДИМСЯ ТУТ</div>
-                  <div class="footer__address-content">109202, г. Москва, 2-я Карачаровская ул., д. 3</div>
+                  <div class="footer__address-title">МЫ НАХОДИМСЯ ТУТ</div><a class="footer__address-content" href="/contacts.html">109202, г. Москва, 2-я Карачаровская ул., д. 3</a>
                 </div>
                 <div class="footer__developer"><a href="#" target="_blank">Создание сайта – Студия NetLab</a></div>
               </div>
